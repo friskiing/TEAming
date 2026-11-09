@@ -2,12 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    backdrop-filter: blur(50px);
-    // background-color: #5468E780;
     z-index: 999;
     width: 100%;
     height: 100px;
-    position:fixed;
+    position: fixed;
 
     &__nav {
         display: flex;
@@ -117,4 +115,8 @@
 
 .listAct {
     transform: translateX(0) !important;
+}
+
+.headerBc {
+    background-color: #5468E780 !important;
 }

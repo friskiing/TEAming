@@ -3,16 +3,25 @@ document.addEventListener('DOMContentLoaded', function () {
     // SCROLL TO TOP
     // ==============================
 
+    const header = document.querySelector('.header');
     const scrollUpButton = document.getElementById('scrollUp');
 
     if (scrollUpButton) {
         const handleScroll = () => {
             const scrollY = window.pageYOffset || document.documentElement.scrollTop;
 
-            if (scrollY > 10) {
+            if (scrollY > 20) {
+                if (header) {
+                    header.classList.add('headerBc');
+                }
+
                 scrollUpButton.classList.add('visible');
             } else {
                 scrollUpButton.classList.remove('visible');
+
+                if (header) {
+                    header.classList.remove('headerBc');
+                }
             }
         };
 
